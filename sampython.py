@@ -1,10 +1,10 @@
-def math(number):
+def math(expression):
     operators = ['+', '-', '*', '/']
     number1 = ''
     final = 0
     calculator = '+'
-    number += '+'
-    for l in number:
+    expression += '+'
+    for l in expression:
         if l not in operators:
             number1 += l
         elif l in operators:
@@ -20,6 +20,5 @@ def math(number):
             elif calculator == '*':
                 final = final * int(number1)
                 number1 = '0'
-            calculator = l
-            
+            calculator = l    
     return int(final)
